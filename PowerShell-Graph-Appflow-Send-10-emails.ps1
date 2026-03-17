@@ -20,7 +20,7 @@ $ClientId     = "<APP_CLIENT_ID>"
 $ClientSecret = "<APP_CLIENT_SECRET>"
 
 # Set the total number of emails to send
-$SendTotal = 101
+$SendTotal = 10
 
 # The mailbox you want to send *as* (must exist and be allowed for the app)
 $SenderUpn    = "sender@contoso.com"
