@@ -7,7 +7,7 @@ Raw Graph + App-only OAuth (client_credentials)
 Sends 10 emails, adds counter + timestamp to subject.
 You can adjust the number of emails to send by changing $SendTotal.
 
-Generated with CoPilot then modified.
+Generated initialy with CoPilot then modified.
 -----------------------------------------------------------------------------
 Create an appliciton flow application registration with no callback.
 For permissions try:
@@ -27,21 +27,21 @@ References:
 # ----------------------------
 # CONFIG (fill these in)
 # ----------------------------
-$TenantId     = "<TENANT_ID_GUID_OR_DOMAIN>"
-$ClientId     = "<APP_CLIENT_ID>"
-$ClientSecret = "<APP_CLIENT_SECRET>"
+$TenantId     = "<TENANT_ID_GUID_OR_DOMAIN>"    # TODO: Change to the Tenant/Directory ID
+$ClientId     = "<APP_CLIENT_ID>"               # TODO: Change to the Client/Application ID
+$ClientSecret = "<APP_CLIENT_SECRET>"           # TODO: Change to the VALUE of the Client Secret
 
 # Set the total number of emails to send
-$SendTotal = 10
+$SendTotal = 10                                # TODO: Change to how many emails you want to send
 
 # The mailbox you want to send *as* (must exist and be allowed for the app)
-$SenderUpn    = "sender@contoso.com"
+$SenderUpn    = "sender@contoso.com"            # TODO: Change to sending UPN
 
 # Recipient
-$ToAddress    = "recipient@contoso.com"
+$ToAddress    = "recipient@contoso.com"        # TODO: Change to recipient SMTP Address
 
 # Optional: slow down to avoid bursts
-$SleepMsBetweenSends = 0   # e.g. 250
+$SleepMsBetweenSends = 0                       # TODO: Change to time between calls- e.g. 250  
  
 # ----------------------------
 # Get app-only access token
