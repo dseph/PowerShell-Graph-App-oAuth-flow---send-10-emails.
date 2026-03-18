@@ -2,15 +2,26 @@
 #PowerShell-Graph-Appflow-Send-10-emails.ps1 
 
 <# 
+-----------------------------------------------------------------------------
 Raw Graph + App-only OAuth (client_credentials)
 Sends 10 emails, adds counter + timestamp to subject.
-Generated with CoPilot then modified.
+You can adjust the number of emails to send by changing $SendTotal.
 
+Generated with CoPilot then modified.
+-----------------------------------------------------------------------------
+Create an appliciton flow application registration with no callback.
+For permissions try:
+    Mail.ReadWrite
+    Mail.Send
+Note: Be sure to do an Admin grant on these permissions.
+Note: You will need to gather the Tenant/Direcytory ID, Client/Application ID and Client Secret Value (not it's ID) to use in this sample.
+-----------------------------------------------------------------------------
 References:
 - OAuth2 client credentials flow (app-only): https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-client-creds-grant-flow
 - Graph sendMail endpoint + JSON body shape: https://learn.microsoft.com/en-us/graph/api/user-sendmail?view=graph-rest-1.0
 - Send Outlook messages from another user:  https://learn.microsoft.com/en-us/graph/outlook-send-mail-from-other-user    
 - Get Outlook messages in a shared or delegated folder: https://learn.microsoft.com/en-us/graph/outlook-share-messages-folders
+-----------------------------------------------------------------------------
 #>
 
 # ----------------------------
