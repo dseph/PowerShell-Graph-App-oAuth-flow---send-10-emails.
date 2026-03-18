@@ -7,9 +7,10 @@ Sends 10 emails, adds counter + timestamp to subject.
 Generated with CoPilot then modified.
 
 References:
-- OAuth2 client credentials flow (app-only): [1](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-client-creds-grant-flow)
-- Graph sendMail endpoint + JSON body shape: [3](https://learn.microsoft.com/en-us/graph/api/user-sendmail?view=graph-rest-1.0)
-   
+- OAuth2 client credentials flow (app-only): https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-client-creds-grant-flow
+- Graph sendMail endpoint + JSON body shape: https://learn.microsoft.com/en-us/graph/api/user-sendmail?view=graph-rest-1.0
+- Send Outlook messages from another user:  https://learn.microsoft.com/en-us/graph/outlook-send-mail-from-other-user    
+
 #>
 
 # ----------------------------
